@@ -1,10 +1,36 @@
+// var wayadd = function(oldword) {
+//   vowels = ["a","e","i","o","u"]
+//     if vowels.includes(oldword[0]) {
+//       return oldword + "way"
+//     }
+//     return oldword + "ay"
+//   }
+
+
 var wayadd = function(oldword) {
   vowels = ["a","e","i","o","u"]
-    if vowels.includes(oldword[0]) {
-      return oldword + "way"
+    for(x of vowels) {
+      if (x ===  oldword[0]) {
+        return oldword + "way"
+      } else { continue; }
     }
-    return oldword + "ay"
   }
+//
+// var wayadd = function(oldword) {
+//   vowels = ["a","e","i","o","u"]
+//     while(vowels.includes(oldword[0] === false) {
+//       for(x of oldword[1:]) {
+//         if vowels.includes(x) === false {
+//           return oldword + x
+//         } else if vowels.includes(x) === true {
+//           return
+//         }
+//         return
+//       }
+//
+//     }
+//     return oldword + "way"
+//   }
 
 $(document).ready(function() {
   $("form#translator").submit(function(event) {
